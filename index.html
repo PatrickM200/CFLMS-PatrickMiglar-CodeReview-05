@@ -1,50 +1,38 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- STYLESHEET -->
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <!--JQUERY-->
-    <script
-  src="https://code.jquery.com/jquery-3.5.1.js"
-  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-  crossorigin="anonymous"></script>
-    <!-- JAVASCRIPT -->
-    <script src="javascript/mainscript.js"></script>
-    <!-- JSON -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- WEBKIT -->
     <script src="https://kit.fontawesome.com/0f42d32ddd.js" crossorigin="anonymous"></script>
-    <script src="./javascript/movies.json"></script>
-    
-    
     <title>Epic Movies</title>
-
-
 </head>
 <body>
     <header>
-        <h1>Epic Movies</h1>
+        <div class="banner1">
+        <img src="img/banner.png" alt="Banner">
+    </div>
         <nav class="topnav">
             <ul class="navlist">
                 <li>    
                     <form  action="index.html">
-                        <button class="button" tpye="submit">Home</button>
+                        <button class="button" type="submit">Home</button>
                     </form>
                      </div>    
                 </li>
                 <li>
-                    <form action="index.html">
-                        <button class="button" tpye="submit">Most Liked</button>
-                    </form>
                      </div>    
                 </li>
                 <li>
                     <div class="dropdown">
-                       <button class="dropdownbutton">Genres
+                       <button class="dropdownbutton">Sort by
                            <div class="dropdowncontent">
-                            <a href="Link 1" title="">Link 1</a>
-                            <a href="Link 1" title="">Link 2</a>
-                            <a href="Link 1" title="">Link 3</a>
+                            <a id="sort" href="#" title="Likes">by Likes</a>
                              </div>
                         </button> 
                     </div>
@@ -56,5 +44,12 @@
         <section class="mainSection" id="wrapper">
         </section>
     </main>
+    <div class="footertop"></div>
+    <footer class="banner2">
+        <img src="img/banner.png" alt="Banner">
+    </footer>
+    <script src="javascript/data.json"></script>
+    <script src="javascript/mainscript.js"></script>
 </body>
+
 </html>

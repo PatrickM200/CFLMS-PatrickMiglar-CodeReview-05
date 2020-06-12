@@ -8,6 +8,21 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   background-color: $dark;
+    .banner1 {
+      background-color: #191919;
+      text-align: center;
+    }
+    .footertop {
+      background-color: $medium;
+      height: 30px;
+    }
+    .banner2 {
+      background-color: #191919;
+      text-align: center;
+      img {
+        height: 300px;
+      }
+    }
 }
 
 p {
@@ -20,10 +35,13 @@ h3 {
 
 /* **************** DROPDOWN **************/
 .dropdownbutton {
-    color: $light;
+    color: $medium;
+    background-color: $light;
     width: 120px;
     height: 50px;
     border: none;
+    font-size: 15pt;
+    font-weight: 600;
   }
   
   .dropdown {
@@ -69,6 +87,9 @@ h3 {
     border-style: none;
     width: 120px;
     height: 50px;
+    background-color: $light;
+    font-size: 15pt;
+    font-weight: 600;
   }
   
   ul li {
@@ -107,6 +128,15 @@ h3 {
       position: absolute;
       bottom: 0;
       margin-bottom: 30px;
+        .likecountcss {
+          height: 50px;
+          width: 100px;
+          background-color: $normal;
+          border-style: none;
+          font-size: 15pt;
+          color: $medium;
+          font-weight: 600;
+        }
 
     .buttonbg {
       font-size: 25pt;
@@ -148,7 +178,7 @@ h3 {
   flex-wrap: wrap;
   margin: auto;
   justify-content: center;
-  
+  min-width: 1500px;
 }
 
 main {

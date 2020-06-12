@@ -1,37 +1,44 @@
-let movie = JSON.parse(movies);
-
-function addMovie(movie) {
-    return `
-    <div class="movieMain">
-        <figure>
-            <img src="${movie.movieImg}" alt="${movie.movieName}">
-            <figcaption>${movie.movieGenre}</figcaption>
-        </figure> 
-        <div>
-            <p class="title">${movie.movieName}</p>
-            <h3>About</h3>
-            <p>${movie.movieDescription}</p>
-            <div class="button">
-                <button class="buttonbg" id="likebutton${i}"><i class="far fa-thumbs-up"></i></button>
-                <button class="likecountcss" id="likecount${i}">${movie[i].likes}</button>
-            </div>
-        </div>
-    </div>`
-}
 
 $(document).ready(function(){
+    let movie = JSON.parse(data);
     $("#wrapper").html("");
-
-    for (i=0; i < movie.length; i++) {
-        likeCount[i] = 0;
-        let movie = movie[i];
-        let build = addMovie(movie);
-        $("#wrapper").append(build);
-
-        $(`#likebutton${i}`).on("click", function(){
-            likeCount[i]++;
-        $(`#likecount${i}`).text(`Likes : ${likeCount[i]}`);
-        });
-        }       
-    }
-)
+    for (let i=0; i < movie.length; i++) {
+    moviepattern(movie[i],i)
+    };
+    function moviepattern(mov,i){        
+        $("#wrapper").append(`
+    <div class="movieMain">
+        <figure>
+            <img src="${mov.movieImg}" alt="${mov.movieName}">
+            <figcaption>${mov.movieGenre}</figcaption>
+        </figure> 
+        <div>
+            <p class="title">${mov.movieName}</p>
+            <h3>About</h3>
+            <p>${mov.movieDescription}</p>
+            <div class="button">
+                <button class="buttonbg" id="likebutton${i}"><i class="far fa-thumbs-up"></i></button>
+                <button class="likecountcss" id="likecount${i}">Likes : ${mov.likes}</button>
+            </div>
+        </div>
+    </div>`);
+    $(`#likebutton${i}`).on("click", function(){
+        mov.likes++;
+        $(`#likecount${i}`).text(`Likes : ${mov.likes}`);
+    });}
+    function compared(a,b) {
+        if (a.likes < b.likes) return 1;
+        else if (a.likes > b.likes) return -1;
+        else return 0;
+    };
+    
+    $("#sort").on("click", function(f) {
+        // creating new Array for sorting
+        let newArray = movie.slice(0);
+        $("#wrapper").text("");
+        newArray.sort(compared);
+        for (let i=0; i < newArray.length; i++) {
+            moviepattern(newArray[i],i)    
+        }
+    });
+});
