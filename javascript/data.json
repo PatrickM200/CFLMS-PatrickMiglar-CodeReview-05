@@ -1,0 +1,55 @@
+data = `[
+    
+{
+"ID": 0,
+"movieName": "Avengers: Infinity War (2018)",
+"movieImg": "img/avengers.jpg",
+"movieDescription": "The mighty Titan Thanos has set itself the task of wiping out half the universe. In order to make this perfidious plan a reality, however, he first needs all six infinity stones, which, in combination with a specially made glove, give him god-like powers. Unfortunately, since there are also two of these stones on Earth, he entrusts his loyal Black Order with their procurement. However, the Avengers, as well as the Guardians of the Galaxy and Thor learn about Thanos' plans and oppose the villain. But none of them has had to deal with such a powerful enemy ...",
+"movieGenre": "Adventure, Action, Science Fiction",
+"likes": 0
+},
+
+{
+"ID": 1,
+"movieName": "Hellraiser IV: Bloodline (1996)",
+"movieImg": "img/hellraiser.jpg",
+"movieDescription": "In the 22nd century, a brilliant scientist tried to banish the evil that one of his ancestors had unknowingly released into the world. The effort to save humanity from hell on earth has never been greater, and Paul Merchant alone has the ability and knowledge to trap Pinhead. The fate of the world will be decided in a final confrontation - it all started with a simple puzzle box that the game maker and ancestor of the scientist, Phillipe Lemarchand, made in the 18th century. The incredible power contained in the box was in fact the gateway to hell and made the demons of the underworld rage on earth. Lecharmand's descendants are cursed forever unless they find a way to close the portal. Paul Merchant is her last hope.",
+"movieGenre": "Horror, Thriller, Science Fiction",
+"likes": 0
+},
+
+{
+"ID": 2,
+"movieName": "Hero (2002)",
+"movieImg": "img/hero.jpg",
+"movieDescription": "China, over 2000 years ago: King Qin wants to assert his rule over all of China against his competitors and become emperor. There have been plans to murder him for years. Above all, three adversaries seek his life: Brokrn Sword, Flying Snow and Sky. After ten years of failing to defeat the three, Nameless visits the palace and tells an extraordinary story .....",
+"movieGenre": "Drama, Adventure, Action, History",
+"likes": 0
+},
+
+{
+"ID": 3,
+"movieName": "The Mule (2018)",
+"movieImg": "img/mule.jpg",
+"movieDescription": "Eastwood takes on the role of Earl Stone, an almost 90-year-old man whose business is close to being forced to close. At that moment he is offered a seemingly simple job as a driver - but in fact Earl becomes a drug courier for a Mexican cartel. He does his job so well that he is then supposed to transport an even larger load - for which he is, however, also given a cartel watchdog. In addition, the mysterious new drug courier has also appeared on the radar of the uncompromising DEA agent Colin Bates. And even though Earl's money problems are history, other past mistakes are heavy on him, and it is uncertain whether he will have enough time to make up for them before the hand of the law - or the cartel's contract killers - catch him.",
+"movieGenre": "Crime, Thriller, Drama,",
+"likes": 0
+},
+
+{
+"ID": 4,
+"movieName": "The Man from Earth (2007)",
+"movieImg": "img/earth.jpg",
+"movieDescription": "Professor Oldman changes his place of residence, friends and colleagues are saying goodbye to help him pack and have a last drink. Oldman's rich treasure trove of ancient artefacts sparked a debate in the course of which the professor told his friends to walk immortally on earth for 14,000 years and, above all, to move every decade so that nobody notices how he does not age. Critical spirits and the way they are schooled, the friends try unsuccessfully to shake the claim.",
+"movieGenre": "Science Fiction, Drama",
+"likes": 0
+},
+
+{
+"ID": 5,
+"movieName": "Joker (2019)",
+"movieImg": "img/joker.jpg",
+"movieDescription": "Gotham City in 1981: The mentally unstable Arthur Fleck truly does not lead the life you dream of: pumped full of medication, he does his job as a costumed advertising sign holder and is often the target of ridicule and attack. In the evening he is drawn to his dilapidated apartment, where he has to take care of his sick mother. Together they hope for a better life that Arthur wants to achieve as a stand-up comedian. When suddenly the support for his psychological care is canceled, the disaster begins. A colleague's firearm, the search for his real father and sudden fame ensure that the once harmless eccentric frightens the whole city ...",
+"movieGenre": "Crime, Thriller, Drama",
+"likes": 0
+}]`

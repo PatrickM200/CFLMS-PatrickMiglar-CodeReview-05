@@ -1,0 +1,188 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background-color: #1c1e24;
+}
+
+p {
+  color: #cfe0f9;
+}
+
+h3 {
+  color: #283654;
+}
+
+/* **************** DROPDOWN **************/
+.dropdownbutton {
+  color: #cfe0f9;
+  width: 120px;
+  height: 50px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdowncontent {
+  display: none;
+  position: absolute;
+  background-color: #4d638c;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdowncontent a {
+  color: #cfe0f9;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdowncontent a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdowncontent {
+  display: block;
+}
+
+/* ***************** NAVIGATION TOP ***************** */
+.topnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #283654;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topnav .navlist {
+  margin: 0;
+  padding: 0;
+}
+
+.topnav ul li .button {
+  border-style: none;
+  width: 120px;
+  height: 50px;
+}
+
+.topnav ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+.topnav ul li a {
+  text-decoration: none;
+  color: #283654;
+}
+
+/* ******************* MOVIE SECTION ************* */
+.movieMain {
+  border: solid;
+  border-radius: 20px;
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 10px;
+  background-color: #4d638c;
+  height: 600px;
+}
+
+.movieMain div .title {
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+.movieMain div p {
+  font-size: 12pt;
+  padding-right: 20px;
+}
+
+.movieMain div {
+  position: relative;
+}
+
+.movieMain .button {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 30px;
+}
+
+.movieMain .button .buttonbg {
+  font-size: 25pt;
+  background-color: transparent;
+  color: #283654;
+  border-style: none;
+}
+
+.movieMain figure {
+  min-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+}
+
+.movieMain figure img {
+  width: 100%;
+  float: left;
+  border: solid;
+  border-color: white;
+  border-bottom-style: none;
+}
+
+.movieMain figure figcaption {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #283654;
+  height: 20px;
+  color: #cfe0f9;
+  float: left;
+  border: solid;
+  border-color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=styles.css.map */
